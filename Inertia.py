@@ -1,3 +1,5 @@
+#PYTHON Inertia
+#Python_Inertia
 '''Program Overview: 
         1) Ask the user what kind of shape they have
         2) Ask the user what units they are using
@@ -11,80 +13,80 @@ from math import *
 
 '''Ask the user what kind of shape they have'''
 def shape_type():
-    print("1. Square/Rectangle \n2. Circle \n3. Triangle \n")
-    shape = int(input("Enter the corrisponding number for the shape you have: "))
+    print("\n1. Square/Rectangle \n2. Circle \n3. Triangle \n")
+    shape = int(input("Enter the corrisponding number for the shape you have: \n"))
     return shape
 
 def hollow_or_solid():
-    print("1. Hollow \n2. Solid \n")
-    hollow = int(input("Enter the corrisponding number for the type of shape you have: "))
+    print("\n1. Hollow \n2. Solid \n")
+    hollow = int(input("Enter the corrisponding number for the type of shape you have: \n"))
     return hollow
 
 def units():
-    unit = str(input("Enter the units that you are using: "))
+    unit = str(input("\nEnter the units that you are using: "))
     return unit
 
 def hollow_square(unit):
-    print("Hollow Square/Rectangle")
-    a = float(input("Enter the outer width: "))
-    b = float(input("Enter the outer height: "))
-    c = float(input("Enter the inner width: "))
-    d = float(input("Enter the inner height: "))
+    print("\nHollow Square/Rectangle\n")
+    a = float(input("Enter the outer width: \n"))
+    b = float(input("Enter the outer height: \n"))
+    c = float(input("Enter the inner width: \n"))
+    d = float(input("Enter the inner height: \n"))
     Ix = (a*b**3 - c*d**3)/12
     Iy = (a**3*b - c**3*d)/12
-    print("Ix = {}{}^4".format(Ix, unit))
-    print("Iy = {}{}^4".format(Iy, unit))
+    print("\nIx = {}{}^4\n".format(Ix, unit))
+    print("Iy = {}{}^4\n".format(Iy, unit))
     return Ix, Iy
 
 def solid_square(unit):
-    print("Solid Square/Rectangle")
-    a = float(input("Enter the outer width: "))
-    b = float(input("Enter the outer height: "))
+    print("Solid Square/Rectangle\n")
+    a = float(input("\nEnter the outer width: "))
+    b = float(input("\nEnter the outer height: "))
     Ix = a*b**3/12
     Iy = a**3*b/12
-    print("Ix = {}{}^4".format(Ix, unit))
-    print("Iy = {}{}^4".format(Iy, unit))
+    print("\nIx = {}{}^4".format(Ix, unit))
+    print("\nIy = {}{}^4\n".format(Iy, unit))
     return Ix, Iy
 
 def hollow_circle(unit):
-    print("Hollow Circle")
-    r1 = float(input("Enter the outer radius: "))
-    r2 = float(input("Enter the inner radius: "))
+    print("\nHollow Circle\n")
+    r1 = float(input("Enter the outer radius: \n"))
+    r2 = float(input("Enter the inner radius: \n"))
     Ix = pi*(r1**4 - r2**4)/4
     Iy = pi*(r1**4 - r2**4)/4
-    print("Ix = {}{}^4".format(Ix, unit))
-    print("Iy = {}{}^4".format(Iy, unit))
+    print("\nIx = {}{}^4".format(Ix, unit))
+    print("\nIy = {}{}^4\n".format(Iy, unit))
     return Ix, Iy
 
 def solid_circle(unit):
-    print("Solid Circle")
-    r = float(input("Enter the radius: "))
+    print("\nSolid Circle\n")
+    r = float(input("\nEnter the radius: "))
     Ix = pi*r**4/4
     Iy = pi*r**4/4
-    print("Ix = {}{}^4".format(Ix, unit))
-    print("Iy = {}{}^4".format(Iy, unit))
+    print("\nIx = {}{}^4\n".format(Ix, unit))
+    print("\nIy = {}{}^4\n".format(Iy, unit))
     return Ix, Iy
 
 def solid_triangle(unit):
-    print("Solid Triangle")
-    a = float(input("Enter the base: "))
-    b = float(input("Enter the height: "))
+    print("Solid Triangle\n")
+    a = float(input("\nEnter the base: "))
+    b = float(input("\nEnter the height:"))
     Ix = a*b**3/36
     Iy = a**3*b/36
-    print("Ix = {}{}^4".format(Ix, unit))
-    print("Iy = {}{}^4".format(Iy, unit))
+    print("\nIx = {}{}^4".format(Ix, unit))
+    print("\nIy = {}{}^4".format(Iy, unit))
     return Ix, Iy
 
 def hollow_triangle(unit):
-    print("Hollow Triangle")
-    a = float(input("Enter the outer base: "))
-    b = float(input("Enter the outer height: "))
-    c = float(input("Enter the inner base: "))
-    d = float(input("Enter the inner height: "))
+    print("Hollow Triangle\n")
+    a = float(input("\nEnter the outer base: "))
+    b = float(input("\nEnter the outer height: "))
+    c = float(input("\nEnter the inner base: "))
+    d = float(input("\nEnter the inner height: "))
     Ix = (a*b**3 - c*d**3)/36
     Iy = (a**3*b - c**3*d)/36
-    print("Ix = {}{}^4".format(Ix, unit))
-    print("Iy = {}{}^4".format(Iy, unit))
+    print("\nIx = {}{}^4".format(Ix, unit))
+    print("\nIy = {}{}^4".format(Iy, unit))
     return Ix, Iy
 
 def main():
@@ -110,3 +112,13 @@ def main():
 
 if __name__ == main():
     main()
+
+#end
+
+
+EXPORT Python_Inertia()
+
+BEGIN
+PRINT();
+PYTHON(Inertia)
+END;
