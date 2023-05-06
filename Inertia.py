@@ -32,8 +32,8 @@ def hollow_square(unit):
     d = float(input("Enter the inner height: "))
     Ix = (a*b**3 - c*d**3)/12
     Iy = (a**3*b - c**3*d)/12
-    print(f"Ix = {Ix}{unit}^4")
-    print(f"Iy = {Iy}{unit}^4")
+    print("Ix = {}{}^4".format(Ix, unit))
+    print("Iy = {}{}^4".format(Iy, unit))
     return Ix, Iy
 
 def solid_square(unit):
@@ -42,8 +42,8 @@ def solid_square(unit):
     b = float(input("Enter the outer height: "))
     Ix = a*b**3/12
     Iy = a**3*b/12
-    print(f"Ix = {Ix}{unit}^4")
-    print(f"Iy = {Iy}{unit}^4")
+    print("Ix = {}{}^4".format(Ix, unit))
+    print("Iy = {}{}^4".format(Iy, unit))
     return Ix, Iy
 
 def hollow_circle(unit):
@@ -52,8 +52,8 @@ def hollow_circle(unit):
     r2 = float(input("Enter the inner radius: "))
     Ix = pi*(r1**4 - r2**4)/4
     Iy = pi*(r1**4 - r2**4)/4
-    print(f"Ix = {Ix}{unit}^4")
-    print(f"Iy = {Iy}{unit}^4")
+    print("Ix = {}{}^4".format(Ix, unit))
+    print("Iy = {}{}^4".format(Iy, unit))
     return Ix, Iy
 
 def solid_circle(unit):
@@ -61,8 +61,8 @@ def solid_circle(unit):
     r = float(input("Enter the radius: "))
     Ix = pi*r**4/4
     Iy = pi*r**4/4
-    print(f"Ix = {Ix}{unit}^4")
-    print(f"Iy = {Iy}{unit}^4")
+    print("Ix = {}{}^4".format(Ix, unit))
+    print("Iy = {}{}^4".format(Iy, unit))
     return Ix, Iy
 
 def solid_triangle(unit):
@@ -71,8 +71,8 @@ def solid_triangle(unit):
     b = float(input("Enter the height: "))
     Ix = a*b**3/36
     Iy = a**3*b/36
-    print(f"Ix = {Ix}{unit}^4")
-    print(f"Iy = {Iy}{unit}^4")
+    print("Ix = {}{}^4".format(Ix, unit))
+    print("Iy = {}{}^4".format(Iy, unit))
     return Ix, Iy
 
 def hollow_triangle(unit):
@@ -83,8 +83,8 @@ def hollow_triangle(unit):
     d = float(input("Enter the inner height: "))
     Ix = (a*b**3 - c*d**3)/36
     Iy = (a**3*b - c**3*d)/36
-    print(f"Ix = {Ix}{unit}^4")
-    print(f"Iy = {Iy}{unit}^4")
+    print("Ix = {}{}^4".format(Ix, unit))
+    print("Iy = {}{}^4".format(Iy, unit))
     return Ix, Iy
 
 def main():
