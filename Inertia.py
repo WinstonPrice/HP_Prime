@@ -11,7 +11,7 @@ from math import *
 
 '''Ask the user what kind of shape they have'''
 def shape_type():
-    print("1. Square/Rectangle \n2. Circle \n 3. Triangle \n")
+    print("1. Square/Rectangle \n2. Circle \n3. Triangle \n")
     shape = int(input("Enter the corrisponding number for the shape you have: "))
     return shape
 
